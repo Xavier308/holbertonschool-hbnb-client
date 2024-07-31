@@ -1,32 +1,99 @@
-/* 
-  This is a SAMPLE File to get you started. Follow the instructions on the project to complete the tasks. 
-  You'll probably need to override some of theese styles.
-*/
-
-* {
-    box-sizing: border-box;
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #f4f4f4;
+    background-color: #FFF8E7; /* Light background for contrast */
     color: #333;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #FFA500; /* HBnB's orange theme */
+    color: white;
     padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px; /* Logo size */
 }
 
 nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
+    padding: 0.5rem;
     margin-left: 1rem;
 }
 
+.login-button {
+    background-color: #FFA500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Main Content Styles */
 main {
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-dropdown {
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.place-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.details-button {
+    background-color: #FFA500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
 }

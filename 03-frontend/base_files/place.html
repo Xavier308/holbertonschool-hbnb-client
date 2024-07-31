@@ -3,27 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Place Details</title>
+    <title>HBnB - Place Details</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png" type="image/x-icon">
 </head>
 <body>
+    <header>
+        <a href="index.html"><img src="logo.png" alt="HBnB Logo" class="logo"></a>
+        <nav>
+            <a href="login.html" class="login-button">Login</a>
+        </nav>
+    </header>
+
     <main>
-        <section id="place-details">
-            <!-- Place details will be populated dynamically -->
+        <section id="place-details" class="section">
+            <!-- Place details will be dynamically added here -->
         </section>
-        <section id="reviews">
-            <!-- Reviews will be populated dynamically -->
+
+        <section id="reviews" class="section">
+            <h2>Reviews</h2>
+            <!-- Review cards will be dynamically added here -->
         </section>
-        <section id="add-review">
-            <h2>Add a Review</h2>
-            <form id="review-form">
-                <label for="review-text">Review:</label>
-                <textarea id="review-text" name="review-text" required></textarea>
-                
-                <button type="submit">Submit</button>
-            </form>
+
+        <section id="add-review" class="section">
+            <!-- Add review form or button will be dynamically added here based on login status -->
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2024 HBnB. All rights reserved.</p>
+    </footer>
+
     <script src="scripts.js"></script>
 </body>
 </html>
