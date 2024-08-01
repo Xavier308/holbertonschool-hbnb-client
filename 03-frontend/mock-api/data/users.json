@@ -1,20 +1,20 @@
 [
     {
         "id": "user-1",
-        "email": "john@example.com",
-        "password": "password123",
-        "name": "John Doe"
+        "email": "johnny@developer.com",
+        "password": "johnpassword",
+        "name": "John Lopez"
     },
     {
         "id": "user-2",
-        "email": "jane@example.com",
-        "password": "mysecurepassword",
-        "name": "Jane Smith"
+        "email": "abimael@edeveloper.com",
+        "password": "abimaelpassword",
+        "name": "Abimael Perez"
     },
     {
         "id": "user-3",
-        "email": "alice@example.com",
-        "password": "alicepassword",
-        "name": "Alice Johnson"
+        "email": "xavier@developer.com",
+        "password": "xavierpassword",
+        "name": "Xavier Cruz"
     }
 ]

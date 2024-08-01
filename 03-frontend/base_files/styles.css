@@ -3,37 +3,52 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFF8E7; /* Light background for contrast */
+    background-color: #f5f7f8; /* Light background for contrast */
     color: #333;
 }
 
+:root {
+    --primary-color: #89ABE3FF;     /* Soft Blue */
+    --secondary-color: #55DDE0FF;   /* Light Aqua */
+    --accent-color: #FA7268FF;      /* Soft Coral */
+    --text-color: #383838FF;        /* Dark Gray */
+    --button-color: #274156FF;      /* Navy Blue */
+}
+
+/* Header Styles */
 header {
-    background-color: #FFA500; /* HBnB's orange theme */
-    color: white;
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    color: var(--text-color);
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.logo {
-    height: 50px; /* Logo size */
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem;
-    margin-left: 1rem;
-}
-
-.login-button {
-    background-color: #FFA500;
-    color: white;
-    padding: 10px 20px;
+/* Login Button Styles */
+.login-button, .logout-button {
+    background-color: var(--button-color);
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+}
+
+.login-button:hover, .logout-button:hover {
+    background-color: darken(var(--button-color), 10%);
+}
+
+/* nav links */
+nav a, .login-button, .logout-button {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover, .login-button:hover, .logout-button:hover {
+    background-color: rgba(255,255,255,0.2);
 }
 
 /* Main Content Styles */
@@ -89,11 +104,61 @@ h1 {
     margin-top: 10px;
 }
 
+/* Card Style for Login Form */
+.login-form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 350px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    padding-bottom: 2rem; /* for the Login word, refactor this*/
+}
+
+.form-group {
+    margin-bottom: 1.5rem; /* Increase space between input fields */
+    width: 100%;
+}
+
+input[type="email"], input[type="password"] {
+    width: 90%; /* Full width of the form */
+    
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-button2 {
+    width: 90%; /* Match input width */
+    padding: 0.8rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    background-color: var(--accent-color);
+    color: white; /* testing*/
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button2:hover {
+    background-color: #fa9c95; /* refactor*/
+}
+
 /* Footer Styles */
 footer {
-    background-color: #333;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     width: 100%;
+    margin-top: 2rem;
+    position: relative;
+    bottom: 0;
 }
